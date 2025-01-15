@@ -1,5 +1,80 @@
-<br> <img src="logo.png">
-<br> 
-<br> 
-<br> 
-Home | DF Dairy Products | DF Winery | Contact US | About DF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        header {
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header img {
+            width: 100px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#design">Design Your Temple</a>
+    </nav>
+    <div style="flex: 1;">
+        <header>
+            <img src="logo.png" alt="Logo">
+        </header>
+        <main>
+            <section id="products">
+                <h2>Products</h2>
+                <p>Here you will find our products.</p>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Information about us goes here.</p>
+            </section>
+            <section id="design">
+                <h2>Design Your Temple</h2>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc0U6_vTtTBLVRAQ2d8klGoLOQe4wZn2XJ3J39B3A7G7wCM2A/formResponse" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="entry.1234567890"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="entry.9876543210"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
